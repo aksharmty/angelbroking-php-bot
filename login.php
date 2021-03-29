@@ -17,7 +17,7 @@ $jsonData = json_encode($data);
 
 $curl = curl_init();
 curl_setopt($curl, CURLOPT_POST, 1);
-curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
+curl_setopt($curl, CURLOPT_POSTFIELDS, $jsonData);
 curl_setopt($curl, CURLOPT_HEADEROPT, CURLHEADER_UNIFIED);
 curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
 
