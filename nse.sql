@@ -51,6 +51,15 @@ INSERT INTO `nse` (`symbol`, `series`, `open`, `close`, `high`, `low`, `date`, `
 ('SYMBOL', ' SERIES', ' OPEN_PRICE', ' LAST_PRICE', ' HIGH_PRICE', ' LOW_PRICE', ' DATE1', '2021-10-08', '08-Oct-2021', '', '20211008', '');
 COMMIT;
 
+CREATE TABLE `coin` (
+  `coin` varchar(225) COLLATE utf8_unicode_ci NOT NULL,
+  `symboltoken` varchar(225) COLLATE utf8_unicode_ci NOT NULL,
+  `market` varchar(225) COLLATE utf8_unicode_ci NOT NULL,
+  `date` varchar(225) COLLATE utf8_unicode_ci NOT NULL,
+  `ch` varchar(225) COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+coin(coin,symboltoken,market,date,ch)
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
